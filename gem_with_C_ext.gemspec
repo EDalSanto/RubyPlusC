@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   s.extensions << "ext/gem_with_C_ext/extconf.rb"
 
   s.add_development_dependency "rake-compiler"
+  s.add_development_dependency "rspec"
 end

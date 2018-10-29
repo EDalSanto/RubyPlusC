@@ -11,7 +11,7 @@ NULLCMD = :
 
 #### Start of system configuration section. ####
 
-srcdir = ../../../../ext/faye_websocket
+srcdir = ext/gem_with_C_ext
 topdir = /usr/local/Cellar/ruby/2.4.1_1/include/ruby-2.4.0
 hdrdir = $(topdir)
 arch_hdrdir = /usr/local/Cellar/ruby/2.4.1_1/include/ruby-2.4.0/x86_64-darwin16
@@ -135,13 +135,13 @@ extout_prefix =
 target_prefix = 
 LOCAL_LIBS = 
 LIBS = $(LIBRUBYARG_SHARED)  -lpthread -ldl -lobjc 
-ORIG_SRCS = faye_websocket.c
+ORIG_SRCS = gem_with_C_ext.c
 SRCS = $(ORIG_SRCS) 
-OBJS = faye_websocket.o
+OBJS = gem_with_C_ext.o
 HDRS = 
 LOCAL_HDRS = 
-TARGET = faye_websocket
-TARGET_NAME = faye_websocket
+TARGET = gem_with_C_ext
+TARGET_NAME = gem_with_C_ext
 TARGET_ENTRY = Init_$(TARGET_NAME)
 DLLIB = $(TARGET).bundle
 EXTSTATIC = 
